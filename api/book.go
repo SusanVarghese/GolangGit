@@ -15,8 +15,8 @@ type Book struct {
 }
 
 var books = map[string]Book{
-	"0345391802": {Title: "The Hitchhiker's Guide to the Galaxy", Author: "Douglas Adams", ISBN: "0345391802"},
-	"0000000000": {Title: "Angels and Deamons", Author: "Dan Brown", ISBN: "0000000000"},
+	"0345391802": Book{Title: "The Hitchhiker's Guide to the Galaxy", Author: "Douglas Adams", ISBN: "0345391802"},
+	"0000000000": Book{Title: "Angels and Deamons", Author: "Dan Brown", ISBN: "0000000000"},
 }
 
 // ToJSON to be used for marshalling of Book type
