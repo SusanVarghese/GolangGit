@@ -10,7 +10,6 @@ import (
 
 func main() {
 	http.HandleFunc("/", index)
-	http.HandleFunc("/", index)
 	http.HandleFunc("/api/echo", api.EchoHandleFunc)
 	http.HandleFunc("/api/hello", api.HelloHandleFunc)
 
@@ -23,7 +22,7 @@ func main() {
 func port() string {
 	port := os.Getenv("PORT")
 	if len(port) == 0 {
-		port = "8080"
+		port = "9090"
 	}
 	return ":" + port
 }

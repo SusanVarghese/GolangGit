@@ -3,7 +3,7 @@ FROM alpine:3.15
 COPY ./GolangGit /app/GolangGit
 RUN chmod +x /app/GolangGit
 
-ENV PORT 8080
-EXPOSE 8080
+ENV PORT 9090
+EXPOSE 9090
 
 ENTRYPOINT /app/GolangGit
