@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/PacktPublishing/GolangGit/api"
+	"github.com/SusanVarghese/GolangGit/api"
 )
 
 func main() {
