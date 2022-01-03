@@ -65,6 +65,7 @@ func BooksHandleFunc(w http.ResponseWriter, r *http.Request) {
 		if created {
 			w.Header().Add("Location", "/api/books/"+isbn)
 			w.WriteHeader(http.StatusCreated)
+			w.Write([]byte("New book created."))
 		} else {
 			w.WriteHeader(http.StatusConflict)
 		}
