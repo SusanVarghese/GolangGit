@@ -1,8 +1,8 @@
-FROM alpine:3.15
+FROM golang:1.17-alpine
 
-ENV SOURCES go/src/github.com/SusanVarghese/GolangGit
+ENV SOURCES go/src/github.com/SusanVarghese/GolangGit/
 COPY . ${SOURCES}
-RUN cd ${SOURCES} && CGO_enables=0 go
+RUN cd ${SOURCES} && CGO_enables=0 go install
 
 ENV PORT 9090
 EXPOSE 9090
