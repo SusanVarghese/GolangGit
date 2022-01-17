@@ -1,0 +1,10 @@
+
+docker login -u susanv17
+docker push susanv17/golanggit:1.0.1
+docker pull susanv17/golanggit:1.0.1
+docker tag golanggit:1.0.1 susanv17/golanggit:1.0.1
+docker run -it -p 9090:9090 golanggit:1.0.1
+ GOOS=linux GOARCH=amd64 go build to improve the docker image
+ $ docker build -t golanggit:1.0.1-alpine .
+ docker images
+ 

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: golanggit
+  labels:
+    language: go
+    env: test
+spec:
+  containers:
+  - image: golanggit:1.0.0
+    name: golanggit
+    ports:
+    - containerPort: 8080
+      protocol: TCP
