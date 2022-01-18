@@ -7,4 +7,14 @@ docker run -it -p 9090:9090 golanggit:1.0.1
  GOOS=linux GOARCH=amd64 go build to improve the docker image
  $ docker build -t golanggit:1.0.1-alpine .
  docker images
+ docker-compose build
+ docker-compose.exe up -d
+  docker container ls --to see the container
+  docker rm -f <container_id> -- to remove / stop the container
+
+
+
+   kubectl.exe port-forward golanggit 8080:8080
+   kubectl delete k8s-pod.yml
+   kubectl create -f k8s-pod.yml
  
