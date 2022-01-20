@@ -10,5 +10,5 @@ spec:
   - image: golanggit:1.0.1
     name: golanggit
     ports:
-    - containerPort: 8080
+    - containerPort: 9090
       protocol: TCP

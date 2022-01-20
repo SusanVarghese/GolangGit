@@ -14,7 +14,11 @@ docker run -it -p 9090:9090 golanggit:1.0.1
 
 
 
+minikube start
    kubectl.exe port-forward golanggit 8080:8080
-   kubectl delete k8s-pod.yml
+   kubectl delete -f k8s-pod.yml
    kubectl create -f k8s-pod.yml
+
+   kubectl create -f k8s-namespace.yml
+   kubectl get ns
  
