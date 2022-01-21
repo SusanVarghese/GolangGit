@@ -20,5 +20,15 @@ minikube start
    kubectl create -f k8s-pod.yml
 
    kubectl create -f k8s-namespace.yml
+   kubectl delete -f k8s-namespace.yml
    kubectl get ns
- 
+
+    kubectl get deployments,pods,rs
+    kubectl create -f k8s-deployment.yml
+    kubectl api-resources | grep deployment
+    kubectl apply -f k8s-deployment.yaml
+    kubectl.exe get -f k8s-deployment.yaml -o yaml
+    kubectl describe deployment golanggit 
+    kubectl.exe create -f k8s-service.yml
+    kubectl.exe get services 
+    minikube service golanggit --url

@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: golanggit
@@ -13,9 +13,13 @@ spec:
     rollingUpdate:
       maxUnavailable: 1
       maxSurge: 2
+  selector:
+      matchLabels:
+        name: golanggit
   template:
     metadata:
       labels:
+        name: golanggit
         app: golanggit
         tier: service
     spec:
