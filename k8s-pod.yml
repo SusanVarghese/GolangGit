@@ -12,3 +12,4 @@ spec:
     ports:
     - containerPort: 9090
       protocol: TCP
+      
